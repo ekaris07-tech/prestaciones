@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prestaciones Laborales en México</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+    .hero {
+      background: linear-gradient(135deg, #0f172a, #0369a1, #06b6d4);
+      color: white;
+      padding: 70px 20px;
+    }
+    .container {
+      max-width: 1150px;
+      margin: 0 auto;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.16);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 48px;
+      margin-bottom: 18px;
+    }
+    .hero p.lead {
+      max-width: 780px;
+      font-size: 20px;
+      margin-bottom: 28px;
+    }
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .team-card {
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 18px;
+      padding: 18px;
+    }
+    .team-card small {
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #dbeafe;
+      margin-bottom: 8px;
+    }
+    .intro-wrap {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 24px;
+      padding: 40px 20px 10px;
+    }
+    .card {
+      background: white;
+      border-radius: 24px;
+      padding: 30px;
+      box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06);
+    }
+    .dark-card {
+      background: #0f172a;
+      color: white;
+    }
+    .section-label {
+      color: #0369a1;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .dark-card .section-label {
+      color: #67e8f9;
+    }
+    .intro-text h2,
+    .blog-sections h2,
+    .conclusion h2 {
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
+    .content-list ul {
+      list-style: none;
+      margin-top: 16px;
+    }
+    .content-list li {
+      background: rgba(255,255,255,0.08);
+      padding: 12px 14px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+    .blog-sections {
+      padding: 24px 20px 10px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 22px;
+      margin-top: 24px;
+    }
+    .topic-card {
+      background: white;
+      border-radius: 24px;
+      padding: 26px;
+      box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06);
+      transition: transform 0.2s ease;
+    }
+    .topic-card:hover {
+      transform: translateY(-4px);
+    }
+    .topic-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    .icon {
+      font-size: 32px;
+    }
+    .tag {
+      background: #e2e8f0;
+      color: #475569;
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .topic-card h3 {
+      font-size: 28px;
+      margin-bottom: 6px;
+    }
+    .author {
+      color: #0369a1;
+      font-weight: bold;
+      margin-bottom: 14px;
+      font-size: 14px;
+    }
+    .topic-card p {
+      margin-bottom: 10px;
+      color: #475569;
+    }
+    .formula {
+      margin-top: 18px;
+      background: #ecfdf5;
+      border: 1px solid #bbf7d0;
+      border-radius: 16px;
+      padding: 14px;
+    }
+    .formula strong {
+      display: block;
+      color: #047857;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+    .bottom {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      padding: 30px 20px 60px;
+    }
+    .conclusion {
+      background: linear-gradient(135deg, #0369a1, #1d4ed8);
+      color: white;
+    }
+    .references ul {
+      padding-left: 18px;
+      margin-top: 14px;
+    }
+    .references li {
+      margin-bottom: 12px;
+      color: #475569;
+    }
+    @media (max-width: 900px) {
+      .intro-wrap,
+      .bottom {
+        grid-template-columns: 1fr;
+      }
+      h1 { font-size: 36px; }
+      .hero p.lead { font-size: 18px; }
+      .intro-text h2,
+      .blog-sections h2,
+      .conclusion h2 { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="badge">Actividad grupal · Derecho laboral</div>
+      <h1>Prestaciones Laborales en México</h1>
+      <p class="lead">Un blog colaborativo sobre salario, jornada laboral, aguinaldo, vacaciones, prima vacacional, días de descanso y PTU, explicado de forma clara, visual y académica.</p>
+
+      <div class="team">
+        <div class="team-card">
+          <small>Integrante</small>
+          Elena Olinka Caballero Álvarez
+        </div>
+        <div class="team-card">
+          <small>Integrante</small>
+          Karina Espejel Sartillo
+        </div>
+        <div class="team-card">
+          <small>Integrante</small>
+          Jorge Arturo Juárez de Gante
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro-wrap">
+      <div class="card intro-text">
+        <div class="section-label">Introducción</div>
+        <h2>¿Por qué es importante conocer las prestaciones de ley?</h2>
+        <p>Las prestaciones laborales protegen la dignidad, el bienestar y la estabilidad económica de las personas trabajadoras. Conocerlas permite identificar derechos básicos, comprender cómo se calculan y promover relaciones laborales más justas dentro de las empresas.</p>
+        <p>En este blog se presentan los temas solicitados en la actividad con una estructura organizada y fácil de consultar, ideal para usarse como página escolar, blog informativo o recurso de estudio.</p>
+      </div>
+
+      <div class="card dark-card content-list">
+        <div class="section-label">Contenido</div>
+        <ul>
+          <li>💰 Salario</li>
+          <li>⏰ Jornada laboral</li>
+          <li>🎁 Aguinaldo</li>
+          <li>🌴 Vacaciones</li>
+          <li>💸 Prima vacacional</li>
+          <li>🛌 Días de descanso</li>
+          <li>📈 PTU</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="blog-sections">
+      <div class="section-label">Temas principales</div>
+      <h2>Secciones del blog</h2>
+
+      <div class="grid">
+        <article class="topic-card">
+          <div class="topic-top"><span class="icon">💰</span><span class="tag">Blog</span></div>
+          <h3>Salario</h3>
+          <div class="author">Por Elena Olinka Caballero Álvarez</div>
+          <p>El salario es la retribución económica que recibe una persona trabajadora por los servicios prestados.</p>
+          <p>Puede fijarse por unidad de tiempo, por unidad de obra, por comisión o a precio alzado.</p>
+          <p>Se clasifica en salario mínimo, salario base y salario integrado, según el contexto laboral y las prestaciones incorporadas.</p>
+          <div class="formula"><strong>Fórmula clave</strong>Salario semanal = salario diario × 7</div>
+        </article>
+
+        <article class="topic-card">
+          <div class="topic-top"><span class="icon">⏰</span><span class="tag">Blog</span></div>
+          <h3>Jornada laboral</h3>
+          <div class="author">Por Jorge Arturo Juárez de Gante</div>
+          <p>La jornada es el tiempo durante el cual la persona trabajadora está a disposición del patrón para prestar sus servicios.</p>
+          <p>Jornada diurna: máximo 8 horas. Jornada nocturna: máximo 7 horas. Jornada mixta: máximo 7.5 horas.</p>
+          <p>La jornada extraordinaria no debe exceder 3 horas diarias ni 3 veces por semana.</p>
+          <div class="formula"><strong>Fórmula clave</strong>Pago de horas extras = salario por hora × 2 (primeras 9 horas) / salario por hora × 3 (horas excedentes)</div>
+        </article>
+
+        <article class="topic-card">
+          <div class="topic-top"><span class="icon">🎁</span><span class="tag">Blog</span></div>
+          <h3>Aguinaldo</h3>
+          <div class="author">Por Karina Espejel Sartillo</div>
+          <p>El aguinaldo es una prestación anual obligatoria que debe pagarse antes del 20 de diciembre.</p>
+          <p>La ley establece un mínimo de 15 días de salario para quienes hayan trabajado el año completo.</p>
+          <p>Cuando no se labora todo el año, se paga de forma proporcional al tiempo trabajado.</p>
+          <div class="formula"><strong>Fórmula clave</strong>Aguinaldo mínimo = salario diario × 15</div>
+        </article>
+
+        <article class="topic-card">
+          <div class="topic-top"><span class="icon">🌴</span><span class="tag">Blog</span></div>
+          <h3>Vacaciones</h3>
+          <div class="author">Por Elena Olinka Caballero Álvarez</div>
+          <p>Las vacaciones son un periodo de descanso pagado que corresponde después de cumplir un año de trabajo.</p>
+          <p>Con la reforma de vacaciones dignas, el mínimo legal del primer año es de 12 días.</p>
+          <p>Los días aumentan conforme avanza la antigüedad de la persona trabajadora.</p>
+          <div class="formula"><strong>Fórmula clave</strong>Pago de vacaciones = salario diario × días de vacaciones</div>
+        </article>
+
+        <article class="topic-card">
+          <div class="topic-top"><span class="icon">💸</span><span class="tag">Blog</span></div>
+          <h3>Prima vacacional</h3>
+          <div class="author">Por Jorge Arturo Juárez de Gante</div>
+          <p>La prima vacacional es una cantidad adicional que se paga cuando el trabajador disfruta su periodo vacacional.</p>
+          <p>El mínimo legal equivale al 25% sobre el salario correspondiente a los días de vacaciones.</p>
+          <p>Su finalidad es apoyar económicamente durante el descanso anual.</p>
+          <div class="formula"><strong>Fórmula clave</strong>Prima vacacional = (salario diario × días de vacaciones) × 0.25</div>
+        </article>
+
+        <article class="topic-card">
+          <div class="topic-top"><span class="icon">🛌</span><span class="tag">Blog</span></div>
+          <h3>Días de descanso</h3>
+          <div class="author">Por Karina Espejel Sartillo</div>
+          <p>Por cada seis días de trabajo corresponde por lo menos un día de descanso con goce de salario íntegro.</p>
+          <p>Existen descansos semanales y días de descanso obligatorio establecidos por la ley.</p>
+          <p>Si la persona trabajadora labora en día de descanso, tiene derecho a un pago adicional.</p>
+          <div class="formula"><strong>Fórmula clave</strong>Pago en día de descanso laborado = salario diario normal + doble adicional (triple en total)</div>
+        </article>
+
+        <article class="topic-card">
+          <div class="topic-top"><span class="icon">📈</span><span class="tag">Blog</span></div>
+          <h3>PTU</h3>
+          <div class="author">Trabajo colaborativo del equipo</div>
+          <p>La Participación de los Trabajadores en las Utilidades de la Empresa es el derecho a recibir una parte de las ganancias generadas.</p>
+          <p>La base general de reparto es el 10% de las utilidades de la empresa.</p>
+          <p>Su distribución considera tanto los días trabajados como el salario percibido.</p>
+          <div class="formula"><strong>Fórmula clave</strong>Distribución general: 50% por días trabajados y 50% por salario</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="bottom">
+      <div class="card conclusion">
+        <div class="section-label" style="color:#bae6fd;">Conclusión</div>
+        <h2>Derechos laborales que sí hacen diferencia</h2>
+        <p>Comprender el salario, la jornada, el aguinaldo, las vacaciones y los descansos ayuda a fortalecer la cultura de respeto en el trabajo. Las prestaciones de ley no son un beneficio opcional, sino parte esencial de una relación laboral digna y equilibrada.</p>
+      </div>
+
+      <div class="card references">
+        <div class="section-label">Referencias APA</div>
+        <ul>
+          <li>Cámara de Diputados. (2026). <em>Ley Federal del Trabajo</em>.</li>
+          <li>Gobierno de México. (s. f.). <em>Condiciones de trabajo</em>.</li>
+          <li>Gobierno de México. (s. f.). <em>Participación de los Trabajadores en las Utilidades de la Empresa (PTU)</em>.</li>
+          <li>Material audiovisual sobre reforma en vacaciones dignas y condiciones de trabajo.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

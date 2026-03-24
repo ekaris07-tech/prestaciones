@@ -22,49 +22,67 @@
       line-height: 1.6;
     }
     .hero {
-      background: linear-gradient(135deg, #0f172a, #0369a1, #06b6d4);
-      color: white;
-      padding: 70px 20px;
-    }
-    .container {
-      max-width: 1150px;
-      margin: 0 auto;
-    }
-    .badge {
-      display: inline-block;
-      background: rgba(255,255,255,0.16);
-      padding: 8px 14px;
-      border-radius: 999px;
-      font-size: 14px;
-      margin-bottom: 20px;
-    }
-    h1 {
-      font-size: 48px;
-      margin-bottom: 18px;
-    }
-    .hero p.lead {
-      max-width: 780px;
-      font-size: 20px;
-      margin-bottom: 28px;
-    }
-    .team {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 16px;
-    }
-    .team-card {
-      background: rgba(255,255,255,0.14);
-      border: 1px solid rgba(255,255,255,0.22);
-      border-radius: 18px;
-      padding: 18px;
-    }
-    .team-card small {
-      display: block;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      color: #dbeafe;
-      margin-bottom: 8px;
-    }
+  background: linear-gradient(135deg, #0f172a, #0369a1, #06b6d4);
+  color: white;
+  padding: 70px 20px;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.logo-buap {
+  width: 95px;
+  height: auto;
+  display: block;
+  margin: 0 auto 18px;
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.16);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 18px;
+}
+
+.hero p.lead {
+  max-width: 780px;
+  font-size: 20px;
+  margin-bottom: 28px;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.team-card {
+  background: rgba(255,255,255,0.14);
+  border: 1px solid rgba(255,255,255,0.22);
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.team-card small {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #dbeafe;
+  margin-bottom: 8px;
+}
     .intro-wrap {
       display: grid;
       grid-template-columns: 2fr 1fr;
@@ -220,38 +238,38 @@
   </style>
 </head>
 <body>
- <header class="hero">
+<header class="hero">
   <div class="container">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Escudo_BUAP.svg/512px-Escudo_BUAP.svg.png"
+      alt="Logo BUAP"
+      class="logo-buap"
+    />
 
-    <!-- LOGO -->
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/BUAP_logo.png" 
-         alt="BUAP"
-         class="logo-buap">
-
-    <!-- UNIVERSIDAD -->
-    <p class="uni">Benemérita Universidad Autónoma de Puebla</p>
-
-    <!-- BADGE -->
     <div class="badge">
       Actividad grupal · Relaciones individuales de Trabajo · Dra. Araceli Nolasco Gámez
     </div>
 
-    <!-- TÍTULO -->
     <h1>Prestaciones Laborales en México</h1>
 
-    <!-- SUBTÍTULO -->
-    <p class="subtitle">
-      Análisis académico con fundamento en la Ley Federal del Trabajo
+    <p class="lead">
+      Un blog colaborativo sobre salario, jornada laboral, aguinaldo, vacaciones, prima vacacional, días de descanso y PTU.
     </p>
 
-    <!-- INTEGRANTES -->
     <div class="team">
-      <strong>Integrantes:</strong><br>
-      Elena Olinka Caballero Álvarez<br>
-      Karina Espejel Sartillo<br>
-      Jorge Arturo Juárez de Gante
+      <div class="team-card">
+        <small>Integrante</small>
+        Elena Olinka Caballero Álvarez
+      </div>
+      <div class="team-card">
+        <small>Integrante</small>
+        Karina Espejel Sartillo
+      </div>
+      <div class="team-card">
+        <small>Integrante</small>
+        Jorge Arturo Juárez de Gante
+      </div>
     </div>
-
   </div>
 </header>
 

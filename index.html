@@ -5,110 +5,122 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prestaciones Laborales en México</title>
   <style>
-   .logo-buap{
-  width: 120px;
-  display: block;
-  margin: 0 auto 20px;
-  background: #0f172a; /* 👈 fondo oscuro real */
-  padding: 12px;
-  border-radius: 50%;
-}
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body{
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f8fafc;
-  color: #1e293b;
-  line-height: 1.6;
-}
-  .hero{
-  background: linear-gradient(135deg, #0f172a, #0369a1, #06b6d4);
-  color: white;
-  padding: 70px 20px;
-}
 
-.hero h1,
-.hero h2,
-.hero p,
-.hero .badge,
-.hero .lead,
-.hero .universidad,
-.hero .descripcion{
-  color: white;
-}
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.6;
+    }
 
-.container {
-  max-width: 1150px;
-  margin: 0 auto;
-}
+    .hero {
+      background: linear-gradient(135deg, #0f172a, #0369a1, #06b6d4);
+      color: white;
+      padding: 70px 20px;
+    }
 
-.logo-buap{
-  width: 125px;
-  height: 125px;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto 22px;
-  background: radial-gradient(circle, #17324d 35%, #ffffff 36%);
-  padding: 14px;
-  border-radius: 50%;
-  border: 3px solid rgba(255,255,255,0.75);
-  box-shadow: 0 10px 28px rgba(0,0,0,0.35);
+    .container {
+      max-width: 1150px;
+      margin: 0 auto;
+    }
 
-.badge {
-  display: inline-block;
-  background: rgba(255,255,255,0.16);
-  padding: 8px 14px;
-  border-radius: 999px;
-  font-size: 14px;
-  margin-bottom: 20px;
-}
+    .logo-buap {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 20px;
+      background: #17324d;
+      padding: 12px;
+      border-radius: 50%;
+      border: 3px solid rgba(255,255,255,0.75);
+      box-shadow: 0 10px 28px rgba(0,0,0,0.35);
+    }
 
-h1 {
-  font-size: 48px;
-  margin-bottom: 18px;
-}
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.16);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: white;
+    }
 
-.hero p.lead {
-  max-width: 780px;
-  font-size: 20px;
-  margin-bottom: 28px;
-}
+    h1 {
+      font-size: 48px;
+      margin-bottom: 18px;
+      color: white;
+    }
 
-.team {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-}
+    .hero p.lead {
+      max-width: 900px;
+      font-size: 20px;
+      margin-bottom: 28px;
+      color: white;
+    }
 
-.team-card {
-  background: rgba(255,255,255,0.14);
-  border: 1px solid rgba(255,255,255,0.22);
-  border-radius: 18px;
-  padding: 18px;
-}
+    .universidad {
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 12px;
+      color: white;
+    }
 
-.team-card small {
-  display: block;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #dbeafe;
-  margin-bottom: 8px;
-}
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .team-card {
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 18px;
+      padding: 18px;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+    }
+
+    .team-card small {
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #dbeafe;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .team-card p {
+      color: white;
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0;
+    }
+
     .intro-wrap {
       display: grid;
       grid-template-columns: 2fr 1fr;
       gap: 24px;
       padding: 40px 20px 10px;
     }
+
     .card {
       background: white;
       border-radius: 24px;
       padding: 30px;
       box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06);
     }
+
     .dark-card {
       background: #0f172a;
       color: white;
     }
+
     .section-label {
       color: #0369a1;
       font-size: 13px;
@@ -117,34 +129,47 @@ h1 {
       text-transform: uppercase;
       margin-bottom: 10px;
     }
+
     .dark-card .section-label {
       color: #67e8f9;
     }
+
     .intro-text h2,
     .blog-sections h2,
     .conclusion h2 {
       font-size: 34px;
       margin-bottom: 12px;
+      color: #1e293b;
     }
+
+    .intro-text p {
+      color: #475569;
+    }
+
     .content-list ul {
       list-style: none;
       margin-top: 16px;
     }
+
     .content-list li {
       background: rgba(255,255,255,0.08);
       padding: 12px 14px;
       border-radius: 12px;
       margin-bottom: 10px;
+      color: white;
     }
+
     .blog-sections {
       padding: 24px 20px 10px;
     }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 22px;
       margin-top: 24px;
     }
+
     .topic-card {
       background: white;
       border-radius: 24px;
@@ -152,18 +177,22 @@ h1 {
       box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06);
       transition: transform 0.2s ease;
     }
+
     .topic-card:hover {
       transform: translateY(-4px);
     }
+
     .topic-top {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 16px;
     }
+
     .icon {
       font-size: 32px;
     }
+
     .tag {
       background: #e2e8f0;
       color: #475569;
@@ -173,20 +202,25 @@ h1 {
       text-transform: uppercase;
       font-weight: bold;
     }
+
     .topic-card h3 {
       font-size: 28px;
       margin-bottom: 6px;
+      color: #1e293b;
     }
+
     .author {
       color: #0369a1;
       font-weight: bold;
       margin-bottom: 14px;
       font-size: 14px;
     }
+
     .topic-card p {
       margin-bottom: 10px;
       color: #475569;
     }
+
     .formula {
       margin-top: 18px;
       background: #ecfdf5;
@@ -194,6 +228,7 @@ h1 {
       border-radius: 16px;
       padding: 14px;
     }
+
     .formula strong {
       display: block;
       color: #047857;
@@ -202,165 +237,111 @@ h1 {
       font-size: 12px;
       letter-spacing: 1px;
     }
+
     .legal {
-  margin-top: 10px;
-  background: #eff6ff;
-  border: 1px solid #bfdbfe;
-  border-radius: 16px;
-  padding: 12px;
-}
-.legal strong {
-  display: block;
-  color: #1d4ed8;
-  font-size: 12px;
-  text-transform: uppercase;
-  margin-bottom: 4px;
-}
+      margin-top: 10px;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 16px;
+      padding: 12px;
+    }
+
+    .legal strong {
+      display: block;
+      color: #1d4ed8;
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+      letter-spacing: 1px;
+    }
+
+    .tool-link {
+      display: inline-block;
+      background: #1d4ed8;
+      color: white !important;
+      padding: 10px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .video-wrap {
+      margin-top: 10px;
+    }
+
     .bottom {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 24px;
       padding: 30px 20px 60px;
     }
+
     .conclusion {
       background: linear-gradient(135deg, #0369a1, #1d4ed8);
       color: white;
     }
+
+    .conclusion h2,
+    .conclusion p {
+      color: white;
+    }
+
     .references ul {
       padding-left: 18px;
       margin-top: 14px;
     }
+
     .references li {
       margin-bottom: 12px;
       color: #475569;
     }
+
     @media (max-width: 900px) {
       .intro-wrap,
       .bottom {
         grid-template-columns: 1fr;
       }
+
       h1 { font-size: 36px; }
       .hero p.lead { font-size: 18px; }
       .intro-text h2,
       .blog-sections h2,
       .conclusion h2 { font-size: 28px; }
     }
-  .integrantes{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 22px;
-  margin-top: 32px;
-}
-
-.integrante-card{
-  background: rgba(255,255,255,0.16);
-  border: 1px solid rgba(255,255,255,0.24);
-  border-radius: 24px;
-  padding: 24px 28px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.18);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.integrante-card:hover{
-  transform: translateY(-4px);
-  box-shadow: 0 16px 34px rgba(0,0,0,0.24);
-}
-
-.integrante-label{
-  display: block;
-  font-size: 12px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: #dbeafe;
-  margin-bottom: 14px;
-  font-weight: 700;
-}
-
-.integrante-card p{
-  margin: 0;
-  color: white;
-  font-size: 18px;
-  line-height: 1.5;
-  font-weight: 600;
-}
-  /* ===== CORRECCIÓN GLOBAL ===== */
-
-/* Texto oscuro por defecto */
-body{
-  color: #1e293b;
-}
-
-/* SOLO el header en blanco */
-.hero{
-  color: white;
-}
-
-/* Secciones blancas con texto visible */
-section,
-.intro,
-.introduccion,
-.content{
-  color: #1e293b;
-}
-
-section p,
-section h2,
-section h3{
-  color: #475569;
-}
-  /* ===== CORRECCIÓN FINAL SEGURA ===== */
-
-/* Texto oscuro en TODAS las secciones blancas */
-section,
-section * {
-  color: #1e293b !important;
-}
-
-/* Mantener blanco SOLO en el header */
-.hero,
-.hero * {
-  color: white !important;
-}
   </style>
 </head>
 <body>
-<header class="hero">
-  <div class="container">
+  <header class="hero">
+    <div class="container">
+      <img src="LogoBuap-1024x1022.png" alt="BUAP" class="logo-buap">
 
-<img src="LogoBuap-1024x1022.png" alt="BUAP" class="logo-buap">
+      <div class="universidad">Benemérita Universidad Autónoma de Puebla</div>
 
-    <h2 class="universidad">Benemérita Universidad Autónoma de Puebla</h2>
+      <div class="badge">Actividad grupal · Relaciones individuales de Trabajo · Dra. Araceli Nolasco Gámez</div>
 
-    <div class="badge">
-      Actividad grupal · Relaciones individuales de Trabajo · Dra. Araceli Nolasco Gámez
+      <h1>Prestaciones Laborales en México</h1>
+
+      <p class="lead">
+        Un blog colaborativo sobre salario, jornada laboral, aguinaldo, vacaciones, prima vacacional, días de descanso y PTU.
+      </p>
+
+      <div class="team">
+        <div class="team-card">
+          <small>Integrante</small>
+          <p>Elena Olinka Caballero Álvarez</p>
+        </div>
+        <div class="team-card">
+          <small>Integrante</small>
+          <p>Karina Espejel Sartillo</p>
+        </div>
+        <div class="team-card">
+          <small>Integrante</small>
+          <p>Jorge Arturo Juárez de Gante</p>
+        </div>
+      </div>
     </div>
-
-    <h1>Prestaciones Laborales en México</h1>
-
-    <p class="descripcion">
-      Un blog colaborativo sobre salario, jornada laboral, aguinaldo, vacaciones, 
-      prima vacacional, días de descanso y PTU.
-    </p>
-
-<div class="integrantes">
-  <div class="integrante-card">
-    <span class="integrante-label">INTEGRANTE</span>
-    <p>Elena Olinka Caballero Álvarez</p>
-  </div>
-
-  <div class="integrante-card">
-    <span class="integrante-label">INTEGRANTE</span>
-    <p>Karina Espejel Sartillo</p>
-  </div>
-
-  <div class="integrante-card">
-    <span class="integrante-label">INTEGRANTE</span>
-    <p>Jorge Arturo Juárez de Gante</p>
-  </div>
-
-</header>
+  </header>
 
   <main class="container">
     <section class="intro-wrap">
@@ -368,7 +349,7 @@ section * {
         <div class="section-label">Introducción</div>
         <h2>¿Por qué es importante conocer las prestaciones de ley?</h2>
         <p>Las prestaciones laborales protegen la dignidad, el bienestar y la estabilidad económica de las personas trabajadoras. Conocerlas permite identificar derechos básicos, comprender cómo se calculan y promover relaciones laborales más justas dentro de las empresas.</p>
-        <p>En este blog se presentan los temas solicitados en la actividad con una estructura organizada y fácil de consultar, ideal para usarse como página escolar, blog informativo o recurso de estudio.</p>
+        <p>En este blog se presentan los temas solicitados en la actividad con una estructura organizada, visual y fácil de consultar, ideal para usarse como página escolar, blog informativo o recurso de estudio.</p>
       </div>
 
       <div class="card dark-card content-list">
@@ -397,11 +378,14 @@ section * {
           <p>El salario es la retribución económica que recibe una persona trabajadora por los servicios prestados.</p>
           <p>Puede fijarse por unidad de tiempo, por unidad de obra, por comisión o a precio alzado.</p>
           <p>Se clasifica en salario mínimo, salario base y salario integrado, según el contexto laboral y las prestaciones incorporadas.</p>
-          <div class="formula"><strong>Fórmula clave</strong>Salario semanal = salario diario × 7</div>
+          <div class="formula">
+            <strong>Fórmula clave</strong>
+            Salario semanal = salario diario × 7
+          </div>
           <div class="legal">
-  <strong>Fundamento legal</strong>
-  Artículos 82 al 89 de la Ley Federal del Trabajo.
-</div>
+            <strong>Fundamento legal</strong>
+            Artículos 82 al 89 de la Ley Federal del Trabajo.
+          </div>
         </article>
 
         <article class="topic-card">
@@ -411,60 +395,38 @@ section * {
           <p>La jornada es el tiempo durante el cual la persona trabajadora está a disposición del patrón para prestar sus servicios.</p>
           <p>Jornada diurna: máximo 8 horas. Jornada nocturna: máximo 7 horas. Jornada mixta: máximo 7.5 horas.</p>
           <p>La jornada extraordinaria no debe exceder 3 horas diarias ni 3 veces por semana.</p>
-          <div class="formula"><strong>Fórmula clave</strong>Pago de horas extras = salario por hora × 2 (primeras 9 horas) / salario por hora × 3 (horas excedentes)</div>
-<div class="legal">
-  <strong>Fundamento legal</strong>
-  Artículos 58 al 68 de la Ley Federal del Trabajo.
-</div>
-            </article>
-        
-    <div class="card">
-  <span class="icon">🎁</span>
-  <h2>Aguinaldo</h2>
+          <div class="formula">
+            <strong>Fórmula clave</strong>
+            Pago de horas extras = salario por hora × 2 (primeras 9 horas) / salario por hora × 3 (horas excedentes)
+          </div>
+          <div class="legal">
+            <strong>Fundamento legal</strong>
+            Artículos 58 al 68 de la Ley Federal del Trabajo.
+          </div>
+        </article>
 
-  <div class="author">
-    Por Karina Espejel Sartillo
-  </div>
+        <article class="topic-card">
+          <div class="topic-top"><span class="icon">🎁</span><span class="tag">Blog</span></div>
+          <h3>Aguinaldo</h3>
+          <div class="author">Por Karina Espejel Sartillo</div>
+          <p>El aguinaldo es una prestación anual obligatoria que debe pagarse antes del 20 de diciembre.</p>
+          <p>La ley establece un mínimo de 15 días de salario para quienes hayan trabajado el año completo.</p>
+          <p>Cuando no se labora todo el año, se paga de forma proporcional al tiempo trabajado.</p>
+          <div class="formula">
+            <strong>Fórmula clave</strong>
+            Aguinaldo mínimo = salario diario × 15
+          </div>
+          <div class="legal">
+            <strong>Fundamento legal</strong>
+            Artículo 87 de la Ley Federal del Trabajo.
+          </div>
+          <div class="legal">
+            <strong>Calculadora de aguinaldo</strong>
+            <p>Calcula tu aguinaldo con esta herramienta:</p>
+            <a class="tool-link" href="https://nominax.com/calculadora-de-aguinaldo/" target="_blank">Calcular aguinaldo</a>
+          </div>
+        </article>
 
-  <p>El aguinaldo es una prestación anual obligatoria que debe pagarse antes del 20 de diciembre.</p>
-  <p>La ley establece un mínimo de 15 días de salario para quienes hayan trabajado el año completo.</p>
-
-  <div class="formula">
-    <strong>Fórmula clave</strong>
-    Salario × 15 días
-  </div>
-
-  <div class="legal">
-    <strong>Fundamento legal</strong>
-    Artículo 87 de la Ley Federal del Trabajo.
-  </div>
-
-  <!-- 👇 CALCULADORA -->
-  <div class="legal">
-    <strong>Calculadora de aguinaldo</strong>
-    <p style="margin-top:6px;">
-      Calcula tu aguinaldo con esta herramienta:
-    </p>
-
-    <div style="margin-top:12px; text-align:center;">
-      <a href="https://nominax.com/calculadora-de-aguinaldo/"
-         target="_blank"
-         style="
-           display:inline-block;
-           background:#1d4ed8;
-           color:white;
-           padding:10px 20px;
-           border-radius:10px;
-           text-decoration:none;
-           font-weight:bold;">
-        Calcular aguinaldo
-      </a>
-    </div>
-  </div>
-
-</div>
-           </article>
-        
         <article class="topic-card">
           <div class="topic-top"><span class="icon">🌴</span><span class="tag">Blog</span></div>
           <h3>Vacaciones</h3>
@@ -472,42 +434,35 @@ section * {
           <p>Las vacaciones son un periodo de descanso pagado que corresponde después de cumplir un año de trabajo.</p>
           <p>Con la reforma de vacaciones dignas, el mínimo legal del primer año es de 12 días.</p>
           <p>Los días aumentan conforme avanza la antigüedad de la persona trabajadora.</p>
-          <div class="formula"><strong>Fórmula clave</strong>Pago de vacaciones = salario diario × días de vacaciones</div>
-<div class="legal">
-  <strong>Fundamento legal</strong>
-  Artículos 76 al 81 de la Ley Federal del Trabajo (Reforma de Vacaciones Dignas).
-</div>
-          <div class="card">
-<span class="icon">🌴</span>
-<h2>Vacaciones</h2>
+          <div class="formula">
+            <strong>Fórmula clave</strong>
+            Pago de vacaciones = salario diario × días de vacaciones
+          </div>
+          <div class="legal">
+            <strong>Fundamento legal</strong>
+            Artículos 76 al 81 de la Ley Federal del Trabajo.
+          </div>
+          <div class="legal">
+            <strong>Video explicativo</strong>
+            <div class="video-wrap">
+              <iframe
+                width="100%"
+                height="200"
+                src="https://www.youtube.com/embed/TiKB4M4lZ9s"
+                title="Vacaciones dignas"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+          <div class="legal">
+            <strong>Calculadora de vacaciones</strong>
+            <p>Calcula tus vacaciones con esta herramienta:</p>
+            <a class="tool-link" href="https://www.boxfactura.com/calculadora/vacaciones" target="_blank">Calcular vacaciones</a>
+          </div>
+        </article>
 
-<p>Descanso anual pagado conforme a la reforma de vacaciones dignas.</p>
-
-<div class="formula">Salario × días</div>
-
-  <p style="margin-top:12px;"><b>Video explicativo:</b> Vacaciones dignas</p>
-  <div style="margin-top:10px;">
-    <iframe
-      width="100%"
-      height="200"
-      src="https://www.youtube.com/embed/TiKB4M4lZ9s"
-      title="Vacaciones dignas"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-  </div>
-
-  <p style="margin-top:15px;"><b>Herramienta interactiva:</b> Calcula tus vacaciones</p>
-  <div style="margin-top:10px; text-align:center;">
-    <a href="https://www.boxfactura.com/calculadora/vacaciones" target="_blank"
-       style="display:inline-block; background:#1e3a8a; color:white; padding:10px 20px; border-radius:10px; text-decoration:none; font-weight:bold;">
-      Abrir calculadora de vacaciones
-    </a>
-  </div>
-</div>
-             </article>
-        
         <article class="topic-card">
           <div class="topic-top"><span class="icon">💸</span><span class="tag">Blog</span></div>
           <h3>Prima vacacional</h3>
@@ -515,33 +470,38 @@ section * {
           <p>La prima vacacional es una cantidad adicional que se paga cuando el trabajador disfruta su periodo vacacional.</p>
           <p>El mínimo legal equivale al 25% sobre el salario correspondiente a los días de vacaciones.</p>
           <p>Su finalidad es apoyar económicamente durante el descanso anual.</p>
-          <div class="formula"><strong>Fórmula clave</strong>Prima vacacional = (salario diario × días de vacaciones) × 0.25</div>
-<div class="legal">
-  <strong>Fundamento legal</strong>
-  Artículo 80 de la Ley Federal del Trabajo.
-    <div class="legal">
-  <strong>Herramienta interactiva</strong>
-  <p style="margin-top:6px;">
-    Calcula tu prima vacacional con esta herramienta:
-  </p>
+          <div class="formula">
+            <strong>Fórmula clave</strong>
+            Prima vacacional = (salario diario × días de vacaciones) × 0.25
+          </div>
+          <div class="legal">
+            <strong>Fundamento legal</strong>
+            Artículo 80 de la Ley Federal del Trabajo.
+          </div>
+          <div class="legal">
+            <strong>Calculadora de prima vacacional</strong>
+            <p>Calcula tu prima vacacional con esta herramienta:</p>
+            <a class="tool-link" href="https://contadormx.net/calculadoras/calculadora-de-prima-vacacional/" target="_blank">Calcular prima vacacional</a>
+          </div>
+        </article>
 
-  <div style="margin-top:12px; text-align:center;">
-    <a href="https://contadormx.net/calculadoras/calculadora-de-prima-vacacional/" 
-       target="_blank"
-       style="
-        display:inline-block;
-        background:#1d4ed8;
-        color:white;
-        padding:10px 20px;
-        border-radius:10px;
-        text-decoration:none;
-        font-weight:bold;">
-      Calcular prima vacacional
-    </a>
-  </div>
-</div>
-           </article>
-        
+        <article class="topic-card">
+          <div class="topic-top"><span class="icon">🛌</span><span class="tag">Blog</span></div>
+          <h3>Días de descanso</h3>
+          <div class="author">Por Karina Espejel Sartillo</div>
+          <p>Por cada seis días de trabajo corresponde por lo menos un día de descanso con goce de salario íntegro.</p>
+          <p>Existen descansos semanales y días de descanso obligatorio establecidos por la ley.</p>
+          <p>Si la persona trabajadora labora en día de descanso, tiene derecho a un pago adicional.</p>
+          <div class="formula">
+            <strong>Fórmula clave</strong>
+            Pago en día de descanso laborado = salario diario normal + doble adicional (triple en total)
+          </div>
+          <div class="legal">
+            <strong>Fundamento legal</strong>
+            Artículos 69 al 75 de la Ley Federal del Trabajo.
+          </div>
+        </article>
+
         <article class="topic-card">
           <div class="topic-top"><span class="icon">📈</span><span class="tag">Blog</span></div>
           <h3>PTU</h3>
@@ -549,21 +509,30 @@ section * {
           <p>La Participación de los Trabajadores en las Utilidades de la Empresa es el derecho a recibir una parte de las ganancias generadas.</p>
           <p>La base general de reparto es el 10% de las utilidades de la empresa.</p>
           <p>Su distribución considera tanto los días trabajados como el salario percibido.</p>
-          <div class="formula"><strong>Fórmula clave</strong>Distribución general: 50% por días trabajados y 50% por salario</div>
-<div class="legal">
-  <strong>Fundamento legal</strong>
-  Artículos 117 al 131 de la Ley Federal del Trabajo.
-</div>    
-          <div style="margin-top:15px;">
-  <iframe width="100%" height="200" 
-    src="https://www.youtube.com/embed/rvxs5QAOAjo" 
-    title="PTU explicación" 
-    frameborder="0" 
-    allowfullscreen>
-  </iframe>
-</div>
+          <div class="formula">
+            <strong>Fórmula clave</strong>
+            Distribución general: 50% por días trabajados y 50% por salario
+          </div>
+          <div class="legal">
+            <strong>Fundamento legal</strong>
+            Artículos 117 al 131 de la Ley Federal del Trabajo.
+          </div>
+          <div class="legal">
+            <strong>Video explicativo</strong>
+            <div class="video-wrap">
+              <iframe
+                width="100%"
+                height="200"
+                src="https://www.youtube.com/embed/rvxs5QAOAjo"
+                title="PTU explicación"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
         </article>
-      
+      </div>
     </section>
 
     <section class="bottom">
@@ -574,13 +543,12 @@ section * {
       </div>
 
       <div class="card references">
-        <div class="section-label">Referencias</div>
+        <div class="section-label">Referencias APA</div>
         <ul>
-          <li>Cámara de Diputados. (2026). <em>Ley Federal del Trabajo https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf</em>.</li>
-          <li>Gobierno de México. (s. f.). <em>Condiciones de trabajo https://www.gob.mx/derechoslaborales/articulos/condiciones-de-trabajo</em>.</li>
+          <li>Cámara de Diputados. (2026). <em>Ley Federal del Trabajo</em>.</li>
+          <li>Gobierno de México. (s. f.). <em>Condiciones de trabajo</em>.</li>
           <li>Gobierno de México. (s. f.). <em>Participación de los Trabajadores en las Utilidades de la Empresa (PTU)</em>.</li>
-          <li>Contador Contado. (24 de abril de 2019) Utilidades (PTU) 2022. Youtube https://www.youtube.com/watch?v=rvxs5QAOAjo.</li>
-          <li>Senado de México. (23 de febrero de 2023). Beneficios de la reforma de vacaciones dignas. Youtube https://www.youtube.com/watch?v=TiKB4M4lZ9s.</li>
+          <li>Material audiovisual sobre reforma en vacaciones dignas, prima vacacional, aguinaldo y condiciones de trabajo.</li>
         </ul>
       </div>
     </section>

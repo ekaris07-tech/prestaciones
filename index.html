@@ -33,15 +33,17 @@
   margin: 0 auto;
 }
 
-.logo-buap {
-  width: 95px;
-  height: auto;
+.logo-buap{
+  width: 125px;
+  height: 125px;
+  object-fit: contain;
   display: block;
-  margin: 0 auto 18px;
-  background: white;
-  padding: 10px;
+  margin: 0 auto 22px;
+  background: radial-gradient(circle, #17324d 35%, #ffffff 36%);
+  padding: 14px;
   border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border: 3px solid rgba(255,255,255,0.75);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.35);
 }
 
 .badge {
@@ -240,12 +242,11 @@ h1 {
 </head>
 <body>
 <header class="hero">
-  <header class="hero">
   <div class="container">
 
-    <img src="buap.png" alt="BUAP" class="logo-buap">
+    <img src="LogoBuap-1024x1022.png" alt="BUAP" class="logo-buap">
 
-    <h2>Benemérita Universidad Autónoma de Puebla</h2>
+    <h2 class="universidad">Benemérita Universidad Autónoma de Puebla</h2>
 
     <div class="badge">
       Actividad grupal · Relaciones individuales de Trabajo · Dra. Araceli Nolasco Gámez
@@ -253,24 +254,17 @@ h1 {
 
     <h1>Prestaciones Laborales en México</h1>
 
-    <p class="lead">
-      Un blog colaborativo sobre salario, jornada laboral, aguinaldo, vacaciones, prima vacacional, días de descanso y PTU.
+    <p class="descripcion">
+      Un blog colaborativo sobre salario, jornada laboral, aguinaldo, vacaciones, 
+      prima vacacional, días de descanso y PTU.
     </p>
 
-    <div class="team">
-      <div class="team-card">
-        <small>Integrante</small>
-        Elena Olinka Caballero Álvarez
-      </div>
-      <div class="team-card">
-        <small>Integrante</small>
-        Karina Espejel Sartillo
-      </div>
-      <div class="team-card">
-        <small>Integrante</small>
-        Jorge Arturo Juárez de Gante
-      </div>
-    </div>
+<div class="integrantes">
+  <div class="card">Elena Olinka Caballero Álvarez</div>
+  <div class="card">Karina Espejel Sartillo</div>
+  <div class="card">Jorge Arturo Juárez de Gante</div>
+</div>
+
   </div>
 </header>
 

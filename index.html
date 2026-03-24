@@ -44,7 +44,6 @@
   border-radius: 50%;
   border: 3px solid rgba(255,255,255,0.75);
   box-shadow: 0 10px 28px rgba(0,0,0,0.35);
-}
 
 .badge {
   display: inline-block;
@@ -238,13 +237,53 @@ h1 {
       .blog-sections h2,
       .conclusion h2 { font-size: 28px; }
     }
+  .integrantes{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+  margin-top: 32px;
+}
+
+.integrante-card{
+  background: rgba(255,255,255,0.16);
+  border: 1px solid rgba(255,255,255,0.24);
+  border-radius: 24px;
+  padding: 24px 28px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.integrante-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 16px 34px rgba(0,0,0,0.24);
+}
+
+.integrante-label{
+  display: block;
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #dbeafe;
+  margin-bottom: 14px;
+  font-weight: 700;
+}
+
+.integrante-card p{
+  margin: 0;
+  color: white;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 600;
+}
   </style>
 </head>
 <body>
 <header class="hero">
   <div class="container">
 
-    <img src="LogoBuap-1024x1022.png" alt="BUAP" class="logo-buap">
+<img src="LogoBuap-1024x1022.png" alt="BUAP" class="logo-buap">
 
     <h2 class="universidad">Benemérita Universidad Autónoma de Puebla</h2>
 
@@ -260,12 +299,21 @@ h1 {
     </p>
 
 <div class="integrantes">
-  <div class="card">Elena Olinka Caballero Álvarez</div>
-  <div class="card">Karina Espejel Sartillo</div>
-  <div class="card">Jorge Arturo Juárez de Gante</div>
-</div>
-
+  <div class="integrante-card">
+    <span class="integrante-label">INTEGRANTE</span>
+    <p>Elena Olinka Caballero Álvarez</p>
   </div>
+
+  <div class="integrante-card">
+    <span class="integrante-label">INTEGRANTE</span>
+    <p>Karina Espejel Sartillo</p>
+  </div>
+
+  <div class="integrante-card">
+    <span class="integrante-label">INTEGRANTE</span>
+    <p>Jorge Arturo Juárez de Gante</p>
+  </div>
+
 </header>
 
   <main class="container">
